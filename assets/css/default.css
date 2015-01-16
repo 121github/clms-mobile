@@ -1,0 +1,916 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('../fonts/opensans-bold-webfont.eot');
+  src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
+    url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansitalic';
+  src: url('../fonts/opensans-italic-webfont.eot');
+  src: url('../fonts/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-italic-webfont.ttf') format('truetype'),
+    url('../fonts/opensans-italic-webfont.svg#open_sansitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansextrabold';
+  src: url('../fonts/opensans-extrabold-webfont.eot');
+  src: url('../fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-extrabold-webfont.ttf') format('truetype'),
+    url('../fonts/opensans-extrabold-webfont.svg#open_sansextrabold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+    url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('../fonts/opensans-light-webfont.eot');
+  src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+    url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ui-shadow,
+.ui-btn-up-a,
+.ui-btn-hover-a,
+.ui-btn-down-a,
+.ui-body-b,
+.ui-btn-up-b,
+.ui-btn-hover-b,
+.ui-btn-down-b,
+.ui-bar-c,
+.ui-body-c,
+.ui-btn-up-c,
+.ui-btn-hover-c,
+.ui-btn-down-c,
+.ui-bar-c,
+.ui-body-d,
+.ui-btn-up-d,
+.ui-btn-hover-d,
+.ui-btn-down-d,
+.ui-bar-d,
+.ui-body-e,
+.ui-btn-up-e,
+.ui-btn-hover-e,
+.ui-btn-down-e,
+.ui-bar-e,
+.ui-overlay-shadow,
+.ui-shadow,
+.ui-btn-active,
+.ui-body-a,
+.ui-bar-a {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+}
+
+.ui-focus,
+.ui-btn:hover {
+  box-shadow: none;
+}
+
+.ui-focus:not(#navmenu-btn),
+.ui-btn:not(#navmenu-btn):focus {
+  box-shadow: none;
+}
+
+.ui-input-text.ui-focus {
+  border-color: #66AFE9;
+}
+
+.ui-btn-up-b {
+  background: none repeat scroll 0 0 #3F7FBA;
+  border-color: #3972A7;
+}
+
+.ui-btn-hover-b {
+  background: none repeat scroll 0 0 #558FC0;
+  border-color: #3972A7;
+}
+
+.ui-btn-up-c {
+  background: none repeat scroll 0 0 #FBFBFB;
+}
+
+.ui-btn-up-c.ui-btn-active {
+  background: #3F7FBA;
+  border-color: #BBBBBB;
+}
+
+.ui-btn-down-c,
+.ui-btn-down-c .ui-btn-active:not(.ui-slider-label),
+.ui-btn-up-c .ui-btn-active:not(.ui-slider-label) {
+  color: #222222 !important;
+  border-color: #bbb;
+}
+
+.ui-btn-hover-c {
+  background: none repeat scroll 0 0 #ebebeb;
+}
+
+.ui-btn-inner {
+  border-top: none;
+}
+
+.ui-popup {
+  border: 1px solid #81C6FF;
+}
+
+.ui-popup:not([data-overlay-theme="a"]) {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.popup-header {
+  border-bottom: 1px solid #81C6FF;
+  padding: 10px 15px;
+}
+
+.popup-header h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.popup-content {
+  padding: 10px 15px;
+}
+
+.popup-footer {
+  border-top: 1px solid #81C6FF;
+  padding: 5px 15px;
+}
+
+.ui-link {
+  font-weight: normal !important;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+  background: none repeat scroll 0 0 rgba(63, 127, 186, 0.9);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 0 0 #000000 inset;
+  border: none;
+}
+
+.header h1 {
+  padding-top: 2px;
+}
+
+#navmenu-btn {
+  border: medium none;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  margin-top: 2px;
+  margin-left: 0px;
+  border-radius: 3px;
+
+  height: 31px;
+  width: 42px;
+}
+
+#navmenu-btn .ui-btn-inner {
+  border: none;
+  margin-top: -6px;
+  margin-left: -2px;
+}
+
+#navmenu-btn .ui-btn-text {
+  font-size: 21.5px;
+}
+
+#navmenu-btn:hover {
+  background-color: #3B72A5;
+}
+
+/* ==========================================================================
+   Nav Panel
+   ========================================================================== */
+
+/* Reveal menu shadow on top of the list items */
+
+.navmenu-panel .ui-bar-d {
+  padding: .7em 15px;
+  background-image: none;
+  background-color: #f8f8f8;
+  border-color: #e8e8e8;
+  color: #EF973A;
+  text-shadow: none;
+}
+
+.ui-panel-display-reveal {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open,
+.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open {
+  -webkit-box-shadow: -5px 0 5px rgba(0,0,0,.10);
+  -moz-box-shadow: -5px 0 5px rgba(0,0,0,.10);
+  box-shadow: -5px 0 5px rgba(0,0,0,.10);
+}
+
+/* Nabmenu panel Lists */
+/* List buttons */
+.navmenu-panel .list .ui-btn-inner {
+  font-family: 'open_sansregular', sans-serif;
+  font-weight: 300; 
+  font-size: 0.95em;
+  border-top: none;
+}
+
+.navmenu-panel .list .ui-btn-up-d, 
+.navmenu-panel .list .ui-btn-hover-d, 
+.navmenu-panel .list .ui-btn-down-d {
+  font-family: 'open_sansregular', sans-serif;
+  font-weight: 300; 
+  border-color: #eee;
+}
+
+.navmenu-panel .list .ui-btn-up-d {
+  background-color: #fff;
+  background-image: none;
+}
+
+.navmenu-panel .list .ui-btn-hover-d {
+  background-color: #f8f8f8;
+  background-image: none;
+}
+
+.navmenu-panel .list .ui-btn-up-d.ui-btn-active, 
+.navmenu-panel .list .ui-btn-hover-d.ui-btn-active, 
+.navmenu-panel .list .ui-btn-down-d.ui-btn-active,
+.navmenu-panel .list .ui-btn-up-d.ui-focus, 
+.navmenu-panel .list .ui-btn-hover-d.ui-focus, 
+.navmenu-panel .list .ui-btn-down-d.ui-focus {
+  border-color: #EF973A;
+  background-color: #EF973A;
+  background-image: none;
+  color: #fff;
+  text-shadow: 0 1px 0 #369;	
+}
+
+.navmenu-panel .list .ui-btn-up-d.ui-focus, 
+.navmenu-panel .list .ui-btn-hover-d.ui-focus, 
+.navmenu-panel .list .ui-btn-down-d.ui-focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.navmenu-panel .list .ui-btn-active a.ui-link-inherit,
+.navmenu-panel .list .ui-btn-active .ui-li-heading,
+.navmenu-panel .list .ui-btn-active .ui-li-desc,
+.navmenu-panel .list .ui-focus a.ui-link-inherit,
+.navmenu-panel .list .ui-focus .ui-li-heading,
+.navmenu-panel .list .ui-focus .ui-li-desc {
+  color: #fff;
+}
+
+.navmenu-panel .list .ui-li .ui-btn-text a.ui-link-inherit,
+.navmenu-panel .list .ui-li .ui-li-desc {
+  text-overflow: clip;
+  overflow: visible;
+  white-space: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.swtnlogo {
+  position: absolute; 
+  right: 3px; 
+  top: 5px;
+  width: 60px;
+}
+
+.content {
+  font-family: 'open_sansregular', sans-serif;
+  color: #555;
+  padding: 0 16px;
+}
+
+.ui-body-c, 
+.ui-overlay-c { 
+  background: #F7F7F7; 
+}
+
+div[data-role="popup"] {
+  background: #fff;
+}
+
+.pull-right {
+  float: right;
+}
+
+.float-push {
+  clear: both;
+}
+
+.hidden { 
+  display: none !important 
+}
+
+label {
+  font-family: 'open_sansregular', sans-serif;
+}
+
+input.ui-input-text, 
+textarea.ui-input-text {
+  font-family: 'open_sansregular', sans-serif;
+}
+
+.error {
+  background-color: #F2DEDE;
+  border: 1px solid #B94A48;
+  color: #B94A48;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 0px;
+}
+
+.success {
+  background-color: #CCFFCC;
+  border: 1px solid #308014;
+  color: #308014;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 0px;
+}
+
+
+.geolocation-error {
+  display: none;
+  text-align: center;
+}
+
+#load-more-ct {
+  height: 40px;
+  width: 182px;
+  margin: auto;
+}
+
+#load-more-ct table {
+  width: 100%;
+}
+
+#load-more-ct table td {
+  text-align: center;
+}
+
+#load-more-ct .loading-more {
+  display: none;
+}
+
+#load-more img {
+  padding-top: 5px;
+}
+
+.chkbx .ui-btn-icon-notext .ui-btn-inner  {
+  padding: 7px 3px;
+}
+
+div[data-role="popup"] {
+  font-family: 'open_sansregular', sans-serif;
+}
+
+.menu-hide {
+  display: none !important;
+}
+
+/* ==========================================================================
+   Button Icons
+   ========================================================================== */
+
+.ui-icon-location {
+  background-image: url('../img/icons/location-btn-icon.png');
+  background-size: 30px;
+  height: 30px;
+  width: 30px;
+  margin: -14px 0 0 -5px !important;
+  background-color: transparent;
+}
+
+.ui-icon-map-ico-btn {
+  background: url('../img/icons/map-ico.png');
+  background-size: 30px;
+  height: 30px;
+  width: 30px;
+  margin: -14px 0 0 -5px !important;
+  background-color: transparent;
+}
+
+.ui-icon-print-ico-btn {
+  background: url('../img/icons/agt_print.png') no-repeat;
+  background-size: 30px;
+  height: 30px;
+  width: 30px;
+  margin: -13px 0 0 -5px !important;
+  background-color: transparent;
+}
+
+.ui-icon-planner,
+.ui-icon-planner-grey,
+.ui-icon-update {
+  background-size: 30px;
+  height: 30px;
+  width: 30px;
+  margin: -15px 0 0 -5px !important;
+  background-color: transparent;
+}
+
+.ui-icon-planner {
+  background-image: url('../img/icons/planner-btn-icon.png');
+}
+
+.ui-icon-planner-grey {
+  background-image: url('../img/icons/planner-btn-icon-grey.png');
+}
+
+.ui-icon-update {
+  background-image: url('../img/icons/update-btn-icon.png');
+}
+
+.ui-icon-map-ico,
+.ui-icon-map-ico:before {
+  background: url(../img/icons/map-ico-noshaddow.png) top 0px right -5px no-repeat;
+  background-size: 26px;
+  background-color: transparent;
+}
+
+/* ==========================================================================
+   File Icons
+   ========================================================================== */
+
+.doc-icon {
+  margin: -11px;
+  margin-left: 11px;
+  padding: 0;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+}
+
+.doc-icon.doc, .doc-icon.docx {
+  background-image: url('../img/icons/docx.png');
+}
+
+.doc-icon.xls, .doc-icon.xlsx, .doc-icon.csv {
+  background-image: url('../img/icons/xlsx.png');
+}
+
+.doc-icon.gif {
+  background-image: url('../img/icons/gif.png');
+}
+
+.doc-icon.jpg, .doc-icon.jpeg  {
+  background-image: url('../img/icons/jpeg.png');
+}
+
+.doc-icon.png {
+  background-image: url('../img/icons/png.png');
+}
+
+.doc-icon.pdf {
+  background-image: url('../img/icons/pdf.png');
+}
+
+.doc-icon.txt {
+  background-image: url('../img/icons/text.png');
+}
+
+/* inset list view forms */
+
+.listview-white {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.listview-white li {
+  background: #FDFDFD;
+  font-family: 'open_sansregular', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ==========================================================================
+   Search leads page
+   ========================================================================== */
+
+#search-leads .adv-search {
+  display: none;
+}
+
+label.fordatefield {
+  vertical-align: top !important;
+}
+
+.ui-field-contain, 
+.ui-mobile fieldset.ui-field-contain {
+  margin: 0.3em 0;
+}
+
+/* ==========================================================================
+   Search results page
+   ========================================================================== */
+
+#search-result .ui-link-inherit {
+  position: relative;
+}
+
+.lv-rt {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+}
+
+.error-txt {
+  display: none;
+  color: #B94A48;
+  font-size: 0.7em;
+}
+
+.red {
+  color: #B94A48;
+  font-size: 0.7em;
+}
+
+.in-jplanner {
+  color: #006600;
+  margin-top: 5px;
+}
+
+/* ==========================================================================
+   Lead details page
+   ========================================================================== */
+
+.empty-msg {
+  background-color: #F5F5F5;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.lead-detail .ui-block-a {
+  font-family: 'open_sansbold';
+}
+
+.lead-detail .ui-block-a, 
+.lead-detail .ui-block-b {
+  margin-bottom: 4px;
+}
+
+.ui-collapsible-content {
+  font-family: 'open_sansregular', sans-serif;
+  font-size: 0.9em;
+}
+
+.ui-table-reflow.ui-responsive {
+  display: inline-table;
+}
+
+.responsive-table {
+  margin-bottom: 10px;
+}
+
+@media ( min-width: 56em ) {
+
+  /* Show the table header rows and set all cells to display: table-cell */
+  .responsive-table td,
+  .responsive-table th,
+  .responsive-table tbody th,
+  .responsive-table tbody td,
+  .responsive-table thead td,
+  .responsive-table thead th {
+    display: table-cell;
+    margin: 0;
+    font-size: 0.9em;
+  }
+  /* Hide the labels in each cell */
+  .responsive-table td .ui-table-cell-label,
+  .responsive-table th .ui-table-cell-label {
+    display: none;
+  }
+
+  .responsive-table td {
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .responsive-table td.chkbx-fixed {
+    width: 42px;
+    min-width: 42px;
+  }
+  .responsive-table td.attendees {
+    width: 150px;
+    min-width: 150px;
+  }
+}
+
+.contacts-form {
+  background-color: #F5F5F5; 
+  padding: 10px 15px; 
+  margin: 6px -15px -10px -15px;
+  border-top: 1px solid #BBBBBB;
+}
+
+/* ==========================================================================
+   Diary manager
+   ========================================================================== */
+
+/* Canendar (month) view */
+
+#calendar-container {
+  margin-top: 20px;
+}
+
+#calendar-controls {
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  min-height: 300px;
+}
+
+.calendar table th {
+  color: #EF973A;
+  border-bottom: 2px solid #ddd;
+  height: 30px;
+}
+
+.calendar table td {
+  text-align: center;
+  cursor: pointer;
+}
+
+.calendar table td.calday {
+  border: 1px solid #ddd;
+}
+
+.calendar table td.calday.weekend {
+  color: #b4b4b4;
+}
+
+.calendar table td.calday span.appmarker {
+  height:23px;
+  width:23px;
+  position:absolute;
+  margin-top:-25px;
+  margin-left:-20px;
+  background: url('../img/icons/bell-icon.png') no-repeat;
+}
+
+.calendar table td.calday span.bdemarker {
+  height:23px;
+  width:23px;
+  position:absolute;
+  margin-top:27px;
+  margin-left:-20px;
+  background: url('../img/icons/bell-red-icon.png') no-repeat;
+}
+
+.calendar table td.calday.today {
+  font-family: 'open_sansitalic';
+  color: #EF973A;
+}
+
+.calendar table td.calday:hover {
+  color: #EF973A;
+}
+.cal-select {  display: inline-block; margin-top:-10px }
+.select-attendees {  width: 280px; }
+.day-desc {float:right }
+/* day view */
+
+.day-container {
+  margin-top: 40px;
+}
+
+.diary-manager-day .hour {
+  height: 59px;
+  border-top: 1px dotted #ddd;
+  width: 100%;
+  position: relative;
+}
+
+.diary-manager-day .timeslot{
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 50px;
+  background-color: #F8F8F8;
+  color: #EF973A;
+  z-index: 2;
+  height: 61px;
+}
+
+.diary-manager-day .timeline {
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed red;
+  position: absolute;
+  position: relative;
+  z-index: 1;
+}
+
+.diary-manager-day .time {
+  color: red;
+  position: absolute;
+  top: -16px;
+  right: 0;
+  padding: 0 2px;
+  font-size: 12px;
+  z-index: 2;
+}
+
+.day-desc {
+  color: #EF973A;
+  padding: 15px 0;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.appCt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50px;
+  right: 0;
+}
+
+.appointment {
+  vertical-align: top;
+  margin: auto;
+  font-size: 0.7em;
+  padding: 0;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'open_sansregular', sans-serif;
+  font-weight: normal;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.cal-own { background: rgba(255, 71, 71, 0.6); border: 1px solid #F23333 }
+.cal-cae { background: rgba(251, 237, 156, 0.6);  border: 1px solid #F7C942; }
+.cal-bde {  background: rgba(214, 233, 246, 0.6); border: 1px solid #3363F2}
+
+.appointment p {
+  margin: 0;
+  margin-left: 2px;
+}
+
+/* ==========================================================================
+   Planner
+   ========================================================================== */
+
+/* split buttons on list */
+.split-custom-wrapper {
+  /* position wrapper on the right of the listitem */
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.split-custom-button {
+  position: relative;
+  float: right; 
+  height: 100%;
+  margin:0;
+  min-width:3em;
+  border:0;
+  border-radius:0;
+  /* remove boxshadow and border */
+  border-left-color :#ccc;
+  border-left-style: solid;
+  border-left-width: 1px;
+  moz-box-shadow: none;
+  webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.split-custom-button span.ui-btn-inner {
+  /* position icons in center of listitem*/
+  position: relative;
+  margin-top:50%;
+  margin-left:50%;
+  /* compensation for icon dimensions */
+  top:11px; 
+  left:-12px;
+  height:40%; /* stay within boundaries of list item */
+}
+
+.ui-first-child .split-custom-right {
+  border-top-right-radius:0.8em;
+
+}
+
+.ui-last-child .split-custom-right {
+  border-bottom-right-radius:0.8em;
+
+}
+
+.updateBtn { 
+  float: right 
+}
+
+/* ==========================================================================
+   Prospect page
+   ========================================================================== */
+
+.marker-info {
+  min-width: 150px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.prospect-map-ct {
+  padding: 0px !important;
+  -webkit-border-bottom-right-radius: 0px !important;
+  -webkit-border-bottom-left-radius:  0px !important;
+  -moz-border-radius-bottomright:     0px !important;
+  -moz-border-radius-bottomleft:      0px !important;
+  border-bottom-right-radius:         0px !important;
+  border-bottom-left-radius:          0px !important;
+}
+
+.prospect-sort-btns {
+  position: absolute; 
+  bottom: 6px; 
+  right: 50px;
+}
+
+.ui-icon-duplicate-info {
+  background: url('../img/icons/dupe-icon.png');
+  background-size: 30px;
+  height: 30px;
+  width: 30px;
+  margin: -14px 0 0 -5px !important;
+  background-color: transparent;
+}
+
+.ui-icon-local-info {
+  background: url('../img/icons/local-icon.png');
+  background-size: 30px;
+  height: 30px;
+  width: 30px;
+  margin: -14px 0 0 -5px !important;
+  background-color: transparent;
+}
+
+.detail-options [data-role=button] {
+  width:230px
+}
+
+table.tablesorter .header {
+  background: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+.excluded { background:#B94A48 !important; color: #BBBBBB }
+.completed { background:#81C6FF !important; color: #BBBBBB }
+
+.lead-is-owned {
+  background: none repeat scroll 0 0 #f8c5c5;
+}
+
+.lead-is-mine {
+  background: none repeat scroll 0 0 #D6E9F6;
+}
+.appointment-cancelled { background:#ebccd1 !important   }
+.cae-app { background:#D7FFC3 !important }
+.renewal-table td,.appointment-table td { cursor:pointer }
